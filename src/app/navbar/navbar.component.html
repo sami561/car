@@ -1,0 +1,24 @@
+<nav class="navbar">
+  <div class="title" (click)="goToHome()">Car Catalogs</div>
+  <div class="nav-container">
+    <ul class="nav-links">
+      <li>
+        <button routerLink="/home">
+          <a  routerLinkActive="active">Home</a>
+        </button>
+      </li>
+
+      <li>
+        <button routerLink="/about">
+          <a routerLinkActive="active">About Us</a>
+        </button>
+      </li>
+
+      <li>
+        <button routerLink="/contact">
+          <a routerLinkActive="active">Contact Us</a>
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>

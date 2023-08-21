@@ -1,0 +1,44 @@
+[debug] [2023-08-20T16:17:43.119Z] ----------------------------------------------------------------------
+[debug] [2023-08-20T16:17:43.121Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\SBS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-08-20T16:17:43.121Z] CLI Version:   12.4.8
+[debug] [2023-08-20T16:17:43.122Z] Platform:      win32
+[debug] [2023-08-20T16:17:43.122Z] Node Version:  v18.16.1
+[debug] [2023-08-20T16:17:43.123Z] Time:          Sun Aug 20 2023 17:17:43 GMT+0100 (heure normale d’Afrique de l’Ouest)
+[debug] [2023-08-20T16:17:43.123Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-20T16:17:43.185Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-20T16:17:43.185Z] > authorizing via signed-in user (melekchtioui3@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\SBS\Desktop\Cars-Catalog
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-08-20T16:18:08.624Z] Using project from CLI flag: cars-catalog-16e24
+[debug] [2023-08-20T16:18:08.626Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cars-catalog-16e24 [none]
+[debug] [2023-08-20T16:18:09.049Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cars-catalog-16e24 200
+[debug] [2023-08-20T16:18:09.049Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cars-catalog-16e24 {"projectId":"cars-catalog-16e24","projectNumber":"251613525162","displayName":"Cars-Catalog","name":"projects/cars-catalog-16e24","resources":{"hostingSite":"cars-catalog-16e24"},"state":"ACTIVE","etag":"1_b19d39e7-5555-4f02-8145-2b3e8dc06f7c"}
+[info] i  Using project cars-catalog-16e24 (Cars-Catalog) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

@@ -1,0 +1,121 @@
+<!-- content -->
+<section class="py-5">
+  <div class="container">
+    <div class="row gx-5">
+      <aside class="col-lg-6">
+        <div class="border rounded-4 mb-3 d-flex justify-content-center">
+          <a
+            data-fslightbox="mygalley"
+            class="rounded-4"
+            target="_blank"
+            data-type="image"
+          >
+            <ng-container *ngIf="voiture">
+              <!-- Add this code to your component's template -->
+              <div
+                id="imageCarousel"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <!-- Previous Control -->
+                <button
+                  class="carousel-control-prev"
+                  (click)="met('-')"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </button>
+
+                <!-- Next Control -->
+                <button
+                  class="carousel-control-next"
+                  (click)="met('+')"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </button>
+                <!-- Display the current image -->
+                <img
+                  *ngIf="images && images.length > 1"
+                  [src]="imgUrl + images[index]"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </ng-container>
+          </a>
+        </div>
+      </aside>
+      <main class="col-lg-6">
+        <div class="ps-lg-3">
+       <div class="container">
+  <div class="column pr-3">
+    <dt class="col">Voiture Make:</dt>
+    <dd class="col">{{ voiture?.vehicleMake }}</dd>
+
+    <dt class="col">Voiture Model:</dt>
+    <dd class="col">{{ voiture?.vehicleModel }}</dd>
+
+    <dt class="col">Model Version:</dt>
+    <dd class="col">{{ voiture?.vehicleModelVersion }}</dd>
+
+    <dt class="col">Power (HP):</dt>
+    <dd class="col">{{ voiture?.drivetrainPowerHP }}</dd>
+    <dt class="col"> Charge Plug:</dt>
+    <dd class="col">{{ voiture?.fastChargePlug }}</dd>
+  </div>
+
+ 
+
+  <div class="column pr-3">
+    <dt class="col">Real Efficiency:</dt>
+    <dd class="col">{{ voiture?.efficiencyReal }}</dd>
+
+    <dt class="col">Charge Plug:</dt>
+    <dd class="col">{{ voiture?.chargePlug }}</dd>
+
+    <dt class="col">Standard Power:</dt>
+    <dd class="col">{{ voiture?.chargeStandardPower }}</dd>
+    <dt class="col">Standard Phase Amp:</dt>
+    <dd class="col">{{ voiture?.chargeStandardPhaseAmp }}</dd>
+    <dt class="col"> Power Max:</dt>
+    <dd class="col">{{ voiture?.fastChargePowerMax }}</dd>
+
+   
+  </div>
+
+  <div class="column ">
+    <dt class="col">Standard Phase:</dt>
+    <dd class="col">{{ voiture?.chargeStandardPhase }}</dd>
+
+    <dt class="col">Top Speed:</dt>
+    <dd class="col">{{ voiture?.performanceTopspeed }}</dd>
+
+    <dt class="col">WLTP Range:</dt>
+    <dd class="col">{{ voiture?.rangeWLTP }}</dd>
+    <dt class="col">Battery Capacity Full:</dt>
+    <dd class="col">{{ voiture?.batteryCapacityFull }}</dd>
+
+    <dt class="col">Can Read:</dt>
+    <dd class="col">{{ voiture?.canRead }}</dd>
+  </div>
+</div>
+          <hr />
+        </div>
+      </main>
+    </div>
+  </div>
+</section>
+<!-- content -->
+
+

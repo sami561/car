@@ -1,0 +1,125 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Search input styles */
+.search-input {
+  margin-bottom: 20px;
+}
+
+.search-field {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Product card styles */
+.product-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.maker-image {
+  width: 120px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+.product-details {
+  margin-top: 15px;
+}
+
+.product-make {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-model {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #666;
+  margin-top: 5px;
+}
+
+.product-version,
+.product-power,
+.product-acceleration,
+.product-topspeed,
+.product-range-wltp,
+.product-range-real,
+.product-efficiency-real,
+.product-charge-plug,
+.product-charge-power,
+.product-charge-phase,
+.product-charge-phase-amp,
+.product-fast-charge-plug,
+.product-fast-charge-power,
+.product-battery-capacity {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.rating-value {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #e67e22;
+}
+
+.rating-count {
+  font-size: 0.8rem;
+  color: #555;
+  margin-left: 5px;
+}
+
+.pagination-controls {
+  margin-top: 20px;
+}
+
+
+  
