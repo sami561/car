@@ -8,7 +8,7 @@ import { Vehicle } from 'src/app/vehicle.model';
 })
 export class ModelService {
 
-  private baseUrl: string = 'https://ev-database.continuousnet.com/models.json';
+  private baseUrl: string = 'http://ev-database.continuousnet.com/models.json';
 
   constructor(
     private http: HttpClient
